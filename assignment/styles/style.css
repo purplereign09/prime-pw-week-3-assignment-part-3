@@ -1,1 +1,16 @@
 /* give your assignment a fun background color */
+body {
+  background-color: #4ecdc4;
+}
+
+h1 {
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+h2 {
+  margin: auto;
+  margin-top: 70px;
+  text-align: center;
+}
