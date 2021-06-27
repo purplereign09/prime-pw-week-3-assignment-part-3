@@ -36,19 +36,14 @@ console.log(supplyChanges);
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.'
 
-for(let i=0; i<supplyChanges.length; i++) {
-  console.log('for loop', supplyChanges[i]);
-}
 
-i = 4;
-//i = 0;
-//i = -1;
-if(supplyChanges[i] > 0) {
-  console.log('Added x parts.');
-} else if (supplyChanges[i]===0){
-  console.log('No change.');
-} else if (supplyChanges[i] < 0){
-  console.log('Removed x parts.');
+for(let x = 0; x < supplyChanges.length; i++) {
+if(supplyChanges[x] > 0) {
+  console.log(`Added ${supplyCharges[x]} parts.`);
+} else if (supplyChanges[x] === 0){
+  console.log(`No change.`);
+} else if (supplyChanges[x] < 0){
+  console.log(`Removed ${supplyChanges[x]} parts.`);
 }
 
 // STRETCH GOALS
@@ -89,6 +84,5 @@ console.log('9. Total supplies available is:');
 
 let sum = 0;
 for(let n of supplyChanges)
-sum += n;
-
-console.log(sum);
+sum += n
+console.log(`Total ${sum}`);
