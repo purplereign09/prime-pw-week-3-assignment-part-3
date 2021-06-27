@@ -20,7 +20,7 @@ console.log('3. Item at index 2 is:', supplyChanges[2]);
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges'
 //    array & console.log the value removed.
-supplyChanges.pop();
+
 let x = supplyChanges.pop();
 
 console.log('4. Removed item:', x);
@@ -40,13 +40,13 @@ console.log(supplyChanges);
 supplyChanges
 
 for(let x = 0; x < supplyChanges.length; x++) {
-if(supplyChanges[x] > 0) {
-  console.log(`Added ${supplyChanges[x]} parts.`);
-} else if (supplyChanges[x]===0){
-  console.log(`No change.`);
-} else if (supplyChanges[x] < 0){
-  console.log(`Removed ${supplyChanges[x]} parts.`);
-}
+  if(supplyChanges[x] > 0) {
+    console.log(`Added ${supplyChanges[x]} parts.`);
+  } else if (supplyChanges[x]===0){
+    console.log(`No change.`);
+  } else if (supplyChanges[x] < 0){
+    console.log(`Removed ${supplyChanges[x]} parts.`);
+  }
 }
 
 // STRETCH GOALS
